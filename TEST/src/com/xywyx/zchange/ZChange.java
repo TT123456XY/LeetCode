@@ -14,9 +14,9 @@ import java.util.List;
  之后，你的输出需要从左往右逐行读取，产生出一个新的字符串，比如："LCIRETOESIIGEDHN"。
 
  */
-public class Zchange {
+public class ZChange {
     public static void main(String[] args){
-        String s = "PAYPALISHIRING";
+        String s = "MYSQL";
         int numRows = 3;
         Solution solution = new Solution();
         System.out.println(solution.convert(s,numRows));
@@ -24,11 +24,11 @@ public class Zchange {
 }
 
 class Solution {
-    public String convert(String s, int numRows) {
+    protected String convert(String s, int numRows) {
 
         if (numRows == 1) return s;
 
-        List<StringBuilder> rows = new ArrayList<StringBuilder>();
+        List<StringBuilder> rows = new ArrayList<>();
         for (int i = 0; i < Math.min(numRows, s.length()); i++)
             rows.add(new StringBuilder());
 
