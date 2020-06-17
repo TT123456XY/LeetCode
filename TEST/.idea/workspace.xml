@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98e8bee9-6673-4472-8331-6802e5a2ce8d" name="Default Changelist" comment="" />
+    <list default="true" id="98e8bee9-6673-4472-8331-6802e5a2ce8d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/xywyx/reverse/Reverse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xywyx/myAtoi/MyAtoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xywyx/myAtoi/MyAtoi.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +31,17 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/xywyx/myAtoi/MyAtoi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="74" selection-start-line="74" selection-end-line="80" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -49,6 +63,8 @@
         <option value="$PROJECT_DIR$/src/com/xywyx/addTwoNumbers/AddTwoNumbers.java" />
         <option value="$PROJECT_DIR$/src/com/xywyx/lengthOfLongestSubstring/LengthOfLongestSubstring.java" />
         <option value="$PROJECT_DIR$/src/com/xywyx/findMedianSortedArrays/FindMedianSortedArrays.java" />
+        <option value="$PROJECT_DIR$/src/com/xywyx/reverse/Reverse.java" />
+        <option value="$PROJECT_DIR$/src/com/xywyx/myAtoi/MyAtoi.java" />
       </list>
     </option>
   </component>
@@ -70,6 +86,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Default Changelist'; set:Default Changelist; class com.intellij.packageDependencies.ChangeListScope">
           <expand>
@@ -118,7 +135,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,13 +153,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="xywyx" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="TEST" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TEST" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="xywyx" type="462c0819:PsiDirectoryNode" />
-              <item name="findMedianSortedArrays" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -154,10 +163,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -171,7 +184,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FindMedianSortedArrays">
+  <component name="RunManager" selected="Application.MyAtoi">
     <configuration name="AddTwoNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xywyx.addTwoNumbers.AddTwoNumbers" />
       <module name="TEST" />
@@ -211,12 +224,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xywyx.twoSum.TwoSum" />
+    <configuration name="MyAtoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xywyx.myAtoi.MyAtoi" />
       <module name="TEST" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xywyx.twoSum.*" />
+          <option name="PATTERN" value="com.xywyx.myAtoi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -224,12 +237,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoThreadPrintNum100" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xywyx.threadTest.TwoThreadPrintNum100" />
+    <configuration name="Reverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xywyx.reverse.Reverse" />
       <module name="TEST" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xywyx.threadTest.*" />
+          <option name="PATTERN" value="com.xywyx.reverse.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -239,11 +252,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyAtoi" />
+        <item itemvalue="Application.Reverse" />
         <item itemvalue="Application.FindMedianSortedArrays" />
         <item itemvalue="Application.LengthOfLongestSubstring" />
         <item itemvalue="Application.AddTwoNumbers" />
-        <item itemvalue="Application.TwoSum" />
-        <item itemvalue="Application.TwoThreadPrintNum100" />
       </list>
     </recent_temporary>
   </component>
@@ -264,6 +277,9 @@
       <workItem from="1559570851485" duration="2967000" />
       <workItem from="1559657502696" duration="1101000" />
       <workItem from="1583581379338" duration="676000" />
+      <workItem from="1583851556540" duration="1225000" />
+      <workItem from="1585409748094" duration="9000" />
+      <workItem from="1585659543140" duration="3228000" />
     </task>
     <task id="LOCAL-00001" summary="力扣练习">
       <created>1559486006034</created>
@@ -279,16 +295,23 @@
       <option name="project" value="LOCAL" />
       <updated>1559573323657</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="字符串转整数">
+      <created>1583852731391</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583852731391</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12933000" />
+    <option name="totallyTimeSpent" value="17395000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21588486" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22541603" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -297,16 +320,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295082" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -324,7 +347,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="力扣练习" />
-    <option name="LAST_COMMIT_MESSAGE" value="力扣练习" />
+    <MESSAGE value="字符串转整数" />
+    <option name="LAST_COMMIT_MESSAGE" value="字符串转整数" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -357,13 +381,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/java/jdk/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="655" column="16" selection-start-line="655" selection-start-column="16" selection-end-line="655" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/java/jdk/src.zip!/java/lang/String.java" />
     <entry file="file://$PROJECT_DIR$/src/com/xywyx/lengthOfLongestSubstring/LengthOfLongestSubstring.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -381,12 +399,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xywyx/reverse/Reverse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xywyx/myAtoi/MyAtoi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="74" selection-start-line="74" selection-end-line="80" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>TEST</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

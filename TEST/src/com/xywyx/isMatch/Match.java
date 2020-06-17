@@ -1,5 +1,7 @@
 package com.xywyx.isMatch;
 
+import java.util.Arrays;
+
 /**
  *给你一个字符串 s 和一个字符规律 p，请你来实现一个支持 '.' 和 '*' 的正则表达式匹配。
  *
@@ -7,6 +9,7 @@ package com.xywyx.isMatch;
  * '*' 匹配零个或多个前面的那一个元素
  * 所谓匹配，是要涵盖 整个 字符串 s的，而不是部分字符串。
  * 说明:
+ * s和p必须全量比上。不能是s的部分或者是p的部分
  * s 可能为空，且只包含从 a-z 的小写字母。
  * p 可能为空，且只包含从 a-z 的小写字母，以及字符 . 和 *。
  * 示例 1:
@@ -42,20 +45,41 @@ package com.xywyx.isMatch;
 public class Match {
     public static void main(String[] args) {
         Solution s = new Solution();
-        boolean is = s.isMatch("","b*");
+        boolean is = s.isMatch("aab","c*aab");
         System.out.println(is);
     }
 }
 class Solution {
+    boolean [] [] memo;
     public boolean isMatch(String s, String p) {
-        if(p.isEmpty()) return s.isEmpty();
-        boolean first = (!s.isEmpty()&&(s.charAt(0)==p.charAt(0)||p.charAt(0)=='.'));
-        if (p.length() >= 2 && p.charAt(1) == '*'){
-            System.out.println(s+p.substring(2));
-            return (isMatch(s, p.substring(2)) ||
-                    (first && isMatch(s.substring(1), p)));
-        } else {
-            return first && isMatch(s.substring(1), p.substring(1));
+        memo = new boolean [s.length() + 1][p.length() + 1];
+        boolean dp = dp(0, 0, s, p);
+//        for (int i = 0; i < s.length() + 1; i++) {
+//            System.out.println(Arrays.toString(memo[i]));
+//        }
+        return dp;
+    }
+    public boolean dp(int i, int j, String text, String pattern) {
+        boolean ans;
+        if (j == pattern.length()){
+            ans = i == text.length();
+        } else{
+            //是否第i位的s，和第j位的p可以对上
+            boolean first_match = (i < text.length() &&
+                    (pattern.charAt(j) == text.charAt(i) ||
+                            pattern.charAt(j) == '.'));
+            //如果j还没到p的倒数第二位，且下一位是*
+            if (j + 1 < pattern.length() && pattern.charAt(j+1) == '*'){
+                //第一部分相当于把*当成0个。直接跳过p的前两个字符
+                //第二部分就是把*当成1个，如果可以匹配上，在把s的下一个和p这个比较。因为p的下一个是*，相当于前一个字符
+                ans = (dp(i, j+2, text, pattern) ||
+                        first_match && dp(i+1, j, text, pattern));
+                //如果下一个字符不是*，那这个字符必须能匹配上，同时比较后面的
+            } else {
+                ans = first_match && dp(i+1, j+1, text, pattern);
+            }
         }
+        memo[i][j] = ans ;
+        return ans;
     }
 }
