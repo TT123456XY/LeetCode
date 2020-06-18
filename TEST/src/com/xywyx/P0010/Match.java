@@ -1,6 +1,4 @@
-package com.xywyx.isMatch;
-
-import java.util.Arrays;
+package com.xywyx.P0010;
 
 /**
  *给你一个字符串 s 和一个字符规律 p，请你来实现一个支持 '.' 和 '*' 的正则表达式匹配。
@@ -53,11 +51,10 @@ class Solution {
     boolean [] [] memo;
     public boolean isMatch(String s, String p) {
         memo = new boolean [s.length() + 1][p.length() + 1];
-        boolean dp = dp(0, 0, s, p);
-//        for (int i = 0; i < s.length() + 1; i++) {
+        //        for (int i = 0; i < s.length() + 1; i++) {
 //            System.out.println(Arrays.toString(memo[i]));
 //        }
-        return dp;
+        return dp(0, 0, s, p);
     }
     public boolean dp(int i, int j, String text, String pattern) {
         boolean ans;

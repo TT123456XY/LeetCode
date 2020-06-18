@@ -1,4 +1,4 @@
-package com.xywyx.twoSum;
+package com.xywyx.P0002;
 
 import java.util.Arrays;
 
@@ -26,7 +26,7 @@ public class TwoSum {
  */
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-        int a[] = {-1,-1};
+        int[] a = {-1,-1};
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
                 if (nums[i] + nums[j] == target) {

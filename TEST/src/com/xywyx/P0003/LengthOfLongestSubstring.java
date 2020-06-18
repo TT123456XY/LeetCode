@@ -1,4 +1,4 @@
-package com.xywyx.lengthOfLongestSubstring;
+package com.xywyx.P0003;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -32,7 +32,7 @@ public class LengthOfLongestSubstring {
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         int length = s.length(), ans = 0 ;
-        Map<Character, Integer> map = new HashMap<Character, Integer>();
+        Map<Character, Integer> map = new HashMap<>();
         for (int i = 0,j = 0; i <length ; i++) {
             if (map.containsKey(s.charAt(i))){
                 j = Math.max(map.get(s.charAt(i)), j);

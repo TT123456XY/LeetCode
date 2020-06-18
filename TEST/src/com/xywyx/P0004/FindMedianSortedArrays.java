@@ -1,4 +1,4 @@
-package com.xywyx.findMedianSortedArrays;
+package com.xywyx.P0004;
 
 /**
  * 给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。
@@ -33,13 +33,13 @@ class Solution {
             } else if (i > iMin && A[i-1] > B[j]) {
                 iMax = i - 1; // i is too big
             } else { // i is perfect
-                int maxLeft = 0;
+                int maxLeft;
                 if (i == 0) { maxLeft = B[j-1]; }
                 else if (j == 0) { maxLeft = A[i-1]; }
                 else { maxLeft = Math.max(A[i-1], B[j-1]); }
                 if ( (m + n) % 2 == 1 ) { return maxLeft; }
 
-                int minRight = 0;
+                int minRight;
                 if (i == m) { minRight = B[j]; }
                 else if (j == n) { minRight = A[i]; }
                 else { minRight = Math.min(B[j], A[i]); }

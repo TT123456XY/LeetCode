@@ -1,4 +1,4 @@
-package com.xywyx.maxArea;
+package com.xywyx.P0011;
 
 /**
  *给你 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点 (i, ai) 。
@@ -20,7 +20,7 @@ public class MaxArea {
 class Solution {
     public int maxArea(int[] height) {
         int res = 0;
-        int area = 0;
+        int area;
         int i = 0, j = height.length - 1;
         while (i < j){
             area = Math.min(height[i],height[j]) * (j-i);
